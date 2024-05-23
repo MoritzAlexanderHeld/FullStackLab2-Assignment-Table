@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "nodemon server.js",
-    "server": "node App.jsx"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
