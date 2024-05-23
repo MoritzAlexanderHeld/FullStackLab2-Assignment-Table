@@ -25,3 +25,6 @@ dist-ssr
 
 # Highly secret stuff
 .env
+
+# Other
+package-lock.json
