@@ -4,7 +4,7 @@ const ProjectAssignments = () => {
   const [assignments, setAssignments] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async () => { // Limit to 5 entries by start date -> I decided to do that right in the server.js, to limit the number directly when loading.
       try {
         const response = await fetch('/api/project_assignments'); // Fetching the project assignments from the API
         const data = await response.json(); // Parsing the response as JSON

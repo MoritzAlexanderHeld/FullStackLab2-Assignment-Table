@@ -110,6 +110,12 @@ app.get('/api/project_assignments', async (req, res) => {
           project_name: '$project.project_name',
           start_date: 1
         }
+      },
+      {
+        $sort: { start_date: -1 } // Sort by start_date
+      },
+      {
+        $limit: 5 // Limit the results to 5
       }
     ]);
 
